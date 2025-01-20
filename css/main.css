@@ -42,6 +42,32 @@ a{
 }
 
 /* ----------------------- HEADER START ----------------------- */
+.site-header{
+    padding-top: 64px;
+    padding-bottom: 67px;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav-list{
+    display: flex;
+    gap: 42px;
+}
+
+.header__nav-item-link{
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    color: var(--dark-gray);
+}
+
+.header__nav-item:hover{
+    border-bottom: 1px solid var(--dark-gray);
+}
 
 
 /* ----------------------- HEADER END ----------------------- */
