@@ -1,0 +1,108 @@
+:root{
+    --peach: #E7816B;
+    --black: #1D1C1E;
+    --white: #ffffff;
+    --light-peach: #FFAD9B;
+    --dark-gray: #333136;
+    --light-gray: #F1F3F5;
+
+    --primary-family: 'Jost', sans-serif;
+    --secondary-family: 'League Spartan', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--primary-family);
+    font-weight: 400;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1141px;
+    padding: 0 15px;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ------------------------- WEB HERO START ------------------- */
+.web-hero{
+    margin-bottom: 160px;
+}
+
+.web-hero__wrapper{
+    background-color: var(--peach);
+    background-image: url(../images/bg-oval.png);
+    padding:64px 190px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.web-hero__text-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 730px;
+}
+
+.web-hero__title{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 48px;
+    color: var(--white);
+    text-wrap: none;
+}
+
+.web-hero__info{
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--white);
+}
+/* ------------------------- WEB HERO END --------------------- */
+
+
+
+/* ------------------------ MEDIA QUERIES START --------------- */
+@media only screen and (max-width: 1242px){
+    
+}
+
+@media only screen and (max-width: 992px){
+
+}
+
+@media only screen and (max-width: 768px){
+    .web-hero__wrapper{
+        padding: 64px 35px;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 576px){
+    .web-hero__wrapper{
+        padding: 64px 15px;
+        text-align: center;
+    }
+
+
+}
+/* ------------------------ MEDIA QUERIES END ---------------- */

@@ -46,12 +46,14 @@ a{
 .site-header{
     padding-top: 64px;
     padding-bottom: 67px;
+    z-index: 10;
 }
 
 .header-container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center !important;
+    height: 27px;
 }
 
 .header__nav-list{
@@ -74,12 +76,18 @@ a{
     display: none;
 }
 
+.header__logo-img{
+    width: 202px;
+    height: 27px;
+}
+
 /* ----------------------- HEADER END ----------------------- */
 
 /* ------------------------ HERO START -------------------- */
 .hero{
     margin-bottom: 160px;
     overflow: hidden;
+    z-index: 10;
 }
 
 .hero__container{
@@ -125,6 +133,8 @@ a{
     font-weight: 500;
     font-size: 15px;
     color: var(--dark-gray);
+
+    z-index: 10;
 }
 
 .hero__btn:hover{
@@ -194,7 +204,7 @@ a{
     z-index: 2; 
     color: var(--white);
     text-align: center;
-    opacity: 0 Initially invisible;
+    /* opacity: 0 ; */
     transition: opacity 0.3s ease-in-out;
 }
 
@@ -467,10 +477,15 @@ a{
         max-width: 90%;
     }
 
+    
+
 
 }
 
 @media only screen and (max-width: 576px){
+    .site-header{
+        padding-bottom: 0;
+    }
     .header__nav{
         display: none;
     }
