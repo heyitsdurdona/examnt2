@@ -220,8 +220,8 @@ a{
 
 
 .main-card2{
-    grid-column: span 1;
-    grid-row: span 1;
+    /* grid-column: span 1;
+    grid-row: span 1; */
 
     background-image: url(../images/grid2.png);
     background-repeat: no-repeat;
@@ -230,8 +230,8 @@ a{
 }
 
 .main-card3{
-    grid-column: span 1;
-    grid-row: span 1;
+    /* grid-column: span 1;
+    grid-row: span 1; */
 
     background-image: url(../images/grid3.png);
     background-repeat: no-repeat;
