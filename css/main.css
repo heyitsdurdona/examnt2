@@ -254,7 +254,7 @@ a{
 
 /* ------------------------ WHY-CHOOSE START ---------------------- */
 .why-choose__wrapper{
-    margin-bottom: 160px;
+    margin-bottom: 380px;
 }
 
 .why-choose__list{
@@ -293,8 +293,115 @@ a{
 }
 /* ------------------------ WHY-CHOOSE END ---------------------- */
 
+.end-wrapper{
+    position: relative;
+}
+/* ------------------------ GET-IN TOUCH START ------------------ */
+.getin-touch{
+    position: absolute;
+    top: -230px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.getin-touch__wrapper{
+    padding: 72px 95px 46px;
+    background-color: var(--peach);
+    background-image: url(../images/bg-oval.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1111px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    gap: 309px;
+}
+
+.getin-touch__text-wrapper{
+    width: 459px;
+}
+
+.getin-touch__title{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 40px;
+    color: var(--white);  
+    margin-bottom: 20px;  
+}
+
+.getin-touch__info{
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--white)
+}
+
+.getin-touch__btn{
+    padding: 18px 25px;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--dark-gray);
+
+}
+
+.getin-touch__btn:hover{
+    background-color: var(--light-peach);
+    color: var(--white);
+}
+
+/* ------------------------ GET-IN TOUCH END ------------------- */
+
+/* ------------------------ FOOTER START ---------------------- */
+.footer{
+    background-color: var(--black);
+    padding: 144px 0 72px;
+}
+.footer__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--white);
+    margin-bottom: 31px;
+}
+
+.footer__nav-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 42px;
+}
+
+.footer__nav-item-link{
+    color: var(--white);
+}
+
+.footer__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.footer-item__title, .footer-item__info{
+    color: var(--white);
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.footer-icons{
+    display: flex;
+    gap: 16px;
+}
+/* ------------------------ FOOTER END ---------------------- */
 /* ----------------------- MEDIA QUERIES START ----------------------- */
 @media only screen and (max-width: 1242px){
+    .getin-touch__wrapper{
+        gap: 280px;
+    }
 
     
 }
@@ -328,6 +435,11 @@ a{
         grid-column: span 1;
     }
 
+    .getin-touch__wrapper{
+        flex-direction: column;
+        gap: 32px;
+    }
+
     
 }
 
@@ -349,6 +461,10 @@ a{
 
     .why-choose__text-wrapper{
         text-align: left;
+    }
+
+    .getin-touch__wrapper{
+        max-width: 90%;
     }
 
 
@@ -378,6 +494,40 @@ a{
     }
     .why-choose__img{
         margin-bottom: 30px;
+    }
+
+    .getin-touch__wrapper{
+        max-width: 75%;
+        text-align: center;
+
+    }
+
+    .footer__header{
+        flex-direction: column;
+    }
+
+    .footer__wrapper{
+        margin: 0 auto;
+    }
+
+    .header__logo-img{
+        margin-bottom: 65px;
+    }
+
+    .footer__nav-list{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer__list{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .footer-item{
+        text-align: center;
     }
 
     
