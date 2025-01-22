@@ -78,6 +78,65 @@ a{
 }
 /* ------------------------- WEB HERO END --------------------- */
 
+/* ------------------------ WEB-DESIGN CARD START ------------- */
+.web-card{
+    margin-bottom: 160px;
+}
+.web-card__wrapper{
+    max-width: 1170px;
+}
+
+.web-card__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+
+.web-card__item{
+    max-width: 350px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.web-card__item-text-wrapper{
+    padding: 32px;
+    background-color: #FDF3F0;
+}
+
+.web-card__item-text-wrapper:hover{
+    background-color: var(--peach);
+}
+
+.web-card__item-text-wrapper:hover .web-card__title,
+.web-card__item-text-wrapper:hover .web-card__info {
+    color: var(--white);
+}
+
+.web-card__title{
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 5px;
+
+    color: var(--peach);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.web-card__info{
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--dark-gray);
+    text-align: center;
+}
+
+.web-card__item:hover{
+    transform: scale(1.03);
+}
+
+/* ------------------------ WEB-DESIGN CARD END ---------------- */
 
 
 /* ------------------------ MEDIA QUERIES START --------------- */
@@ -86,6 +145,7 @@ a{
 }
 
 @media only screen and (max-width: 992px){
+    
 
 }
 
@@ -95,6 +155,26 @@ a{
         text-align: center;
     }
 
+    .web-card__item{
+        flex-direction: row;
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .web-card__item-text-wrapper{
+        padding: 109px 41px;
+    }
+
+    .web-hero{
+        margin-bottom: 120px;
+    }
+
+    .web-card{
+        margin-bottom: 120px;
+    }
+
+
+
 }
 
 @media only screen and (max-width: 576px){
@@ -103,6 +183,15 @@ a{
         text-align: center;
     }
 
+    .web-card__item{
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .web-card__item-text-wrapper{
+        width: 350px;
+        padding: 32px 30px;
+    }
 
 }
 /* ------------------------ MEDIA QUERIES END ---------------- */
